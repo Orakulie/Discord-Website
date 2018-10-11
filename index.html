@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>DIE GRUPPE</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+
+
+    
+    <div class="ueberschrift" id="header">
+        <div id="button">DIE GRUPPE:<form action ="send.php" method="post"><input type="text" name="text" ><input type="submit" value="Senden"></form></div>
+    </div>
+    <div class="icon-bar" id="bar">
+  <a href="index.html"><i class="fas fa-comments"></i></a> 
+  <a href="discord.html"><i class="fab fa-discord"></i></a> 
+</div>
+    
+<div class="inhalt">
+    </div>    
+    <script>
+        
+        
+     
+        
+        
+        
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var bar = document.getElementById("bar");
+var vis = false;
+var sticky = header.offsetTop;
+        
+        
+        
+   setTimeout(sleep,3000);
+        
+        function sleep()
+        {
+            header.style.display ="flex";
+
+            header.style.whiteSpace = "pre-wrap";
+        }
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+    bar.classList.add("sticky");
+
+  } else {
+    header.classList.remove("sticky");
+    bar.classList.remove("sticky");
+
+  }
+}
+    var button = document.getElementById("button");
+    var posC;
+    button.addEventListener("mousedown",function()
+        {
+        
+        var sa = window.getComputedStyle(button).getPropertyValue("margin-left").split("p");
+              
+        posC = event.clientX - sa[0];
+        window.addEventListener('mousemove',move);
+        window.addEventListener("mouseup",function(){
+        window.removeEventListener("mousemove",move);
+        });
+        });
+button.addEventListener("dblclick",topScroll);
+    
+    
+    function topScroll(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        
+    }
+header.addEventListener("click",drop);
+    
+    
+    function drop(){
+        if(vis == false)
+            {
+                bar.style.visibility = "visible";
+                bar.classList.add("icon-bar2");
+                vis = true;
+            }else{
+                bar.style.visibility = "hidden";
+                vis = false;
+        }
+    }
+    
+        
+function move(){
+   
+       
+        var pos = event.clientX - posC;
+        button.style.marginLeft = pos + "px";
+            
+            }
+    
+    
+
+        
+    </script>
+    
+    
+</body>
+‼</html>

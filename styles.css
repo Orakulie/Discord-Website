@@ -1,0 +1,165 @@
+.tr{
+
+right: 16px;
+font-size: 18px;
+top:8px;
+}
+br{
+display:block;
+content:"";
+}
+
+body{
+    background-color:#333;
+    margin-top:50px;
+    margin-left:0;
+    margin-right:0;
+    font-family: Raleway, sans-serif;
+}
+
+.inhalt{
+
+    color:white;
+    border:3px solid steelblue;
+    border-radius: 5px;
+    margin:20px;
+    border-width: 5px;  
+}
+
+.ueberschrift{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: mediumseagreen;
+    height:auto;
+    padding: 20px 0px;
+    vertical-align: middle;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+.ueberschrift #button{
+    color:white;
+    
+    margin-right:20px;
+    margin-left: 20px;
+    font-size:35px;
+    box-sizing: content-box;
+    height:auto;
+    width:auto;
+    overflow: hidden;
+    border-right:0.15em solid orange;
+    /*margin-left:calc(50% - 100px);
+*/
+    background-color: transparent;
+  
+    animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
+    -webkit-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
+    -moz-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
+    -o-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
+   
+  
+
+}
+.ueberschrift #drop{
+ display: inline;
+margin-bottom: 5px;
+    padding-bottom: 5px;
+    
+    
+    
+    
+}
+.ueberschrift div input[type="text"]{
+
+    display: inline;
+    vertical-align:middle;
+    height:30px;
+    width:400px;
+    margin-bottom: 8px;
+    background-color: white;
+    border:none;
+    color:#333;
+    font-size:25px;
+    margin-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+    
+}
+.ueberschrift div input[type="submit"]{
+    -webkit-appearance: none;
+    display: inline;
+    vertical-align:middle;
+    height:30px;
+    width:100px;
+    margin-bottom: 7px;
+    background-color: #333;
+    border:none;
+    color:white;
+    
+}
+.ueberschrift div form{
+    display: inline;
+    padding: 0;
+    margin:0;
+    
+}
+
+
+@-webkit-keyframes grow{
+    from{width: 0;}
+    to{width:760px;}
+}
+
+@keyframes blinke{ 
+    to{border-color:transparent;}
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+
+}
+
+.sticky + .inhalt{
+    margin-top: 280px;
+}
+
+.icon-bar{
+     overflow: hidden;
+    white-space: nowrap;
+    background-color: mediumseagreen;
+    top:43px;
+    margin-bottom: 50px;
+    transition: all 1s linear;
+    
+}
+
+.icon-bar.icon-bar2{
+   
+
+}
+
+
+.icon-bar a{
+   
+    display:inline-block;
+   vertical-align: middle;
+    padding: 20px;
+    font-size:50px;
+    color:white;
+    
+    
+}
+
+
+
+
+
+
