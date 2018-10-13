@@ -3,3 +3,4 @@ Eine kleine Website die ich geschrieben habe. Mein Bot liest den Nachrichten Ver
 
 Der Server läuft unter dieser Adresse:
 http://31.17.226.248/
+(der Bot läuft ist manchmal offline)
