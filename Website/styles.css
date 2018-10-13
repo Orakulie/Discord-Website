@@ -17,6 +17,7 @@ body{
     font-family: Raleway, sans-serif;
 }
 
+
 .inhalt{
 
     color:white;
@@ -27,7 +28,7 @@ body{
 }
 
 .ueberschrift{
-    
+    margin-bottom: 50px;
     white-space: nowrap;
     overflow: hidden;
     background-color: mediumseagreen;
@@ -43,11 +44,11 @@ body{
                                   supported by Chrome and Opera */
 
 }
-.ueberschrift #button{
+.ueberschrift div{
     color:white;
-    
-    margin-right:20px;
+   margin-right:20px;
     margin-left: 20px;
+
     font-size:35px;
     box-sizing: content-box;
     height:auto;
@@ -59,24 +60,14 @@ body{
     background-color: transparent;
   
     animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
-    -webkit-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
-    -moz-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
-    -o-animation: grow 3s ease-in-out forwards, blinke 0.5s 3s ease-out forwards;
+    -webkit-animation: grow 3s 1 ease-in-out forwards, blinke 0.5s 3s 1 ease-out forwards;
+    -moz-animation: grow 3s 1 ease-in-out forwards, blinke 0.5s 3s 1 ease-out forwards;
+    -o-animation: grow 3s 1 ease-in-out forwards, blinke 0.5s 3s 1 ease-out forwards;
    
   
 
 }
-.ueberschrift #drop{
- display: inline;
-margin-bottom: 5px;
-    padding-bottom: 5px;
-    
-    
-    
-    
-}
 .ueberschrift div input[type="text"]{
-
     display: inline;
     vertical-align:middle;
     height:30px;
@@ -86,22 +77,21 @@ margin-bottom: 5px;
     border:none;
     color:#333;
     font-size:25px;
+
     margin-right: 5px;
-    padding-left: 5px;
     border-radius: 5px;
     
 }
 .ueberschrift div input[type="submit"]{
-    -webkit-appearance: none;
+    -webkit-appearance:none;
     display: inline;
     vertical-align:middle;
     height:30px;
     width:100px;
     margin-bottom: 7px;
     background-color: #333;
-    border:none;
+    border:none 0;
     color:white;
-    
 }
 .ueberschrift div form{
     display: inline;
@@ -113,7 +103,7 @@ margin-bottom: 5px;
 
 @-webkit-keyframes grow{
     from{width: 0;}
-    to{width:760px;}
+    to{width:725px;}
 }
 
 @keyframes blinke{ 
@@ -128,35 +118,13 @@ margin-bottom: 5px;
 }
 
 .sticky + .inhalt{
-    margin-top: 280px;
-}
-
-.icon-bar{
-     overflow: hidden;
-    white-space: nowrap;
-    background-color: mediumseagreen;
-    top:43px;
-    margin-bottom: 50px;
-    transition: all 1s linear;
-    
-}
-
-.icon-bar.icon-bar2{
-   
-
+    margin-top: 180px;
 }
 
 
-.icon-bar a{
-   
-    display:inline-block;
-   vertical-align: middle;
-    padding: 20px;
-    font-size:50px;
-    color:white;
-    
-    
-}
+
+
+
 
 
 
